@@ -5,6 +5,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "nodemon --watch \"src/\" -e ts -r ts-node/register src/server.ts",
+    "devJS": "nodemon --watch \"src/\" src/server.js",
     "prod": "node dist/server.js",
     "build": "tsc && copyup ./src/*.yaml ./src/**/*.yaml dist"
   },
